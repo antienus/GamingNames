@@ -1,0 +1,11 @@
+class Main {
+  public static void main(String[] args) {
+    First f = new First();
+    Last l = new Last();
+    Number n = new Number();
+    System.out.print(f.getFirst((int)(Math.random()*f.getFirstLength()))+l.getLast((int)(Math.random()*l.getLastLength())));
+    if(Math.random() > 0.5){
+     System.out.print(n.getNum((int)(Math.random()*n.getNumLength())));
+    }
+  }
+}
